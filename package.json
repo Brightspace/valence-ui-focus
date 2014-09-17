@@ -6,7 +6,7 @@
   "private": "true",
   "repository": {
     "type": "git",
-    "url": "ssh://git@git.dev.d2l:7999/val/vui-focus.git"
+    "url": "ssh://git@git.dev.d2l:7999/val/focus.git"
   },
   "devDependencies": {
     "vui-helpers": "^0.0.0",
