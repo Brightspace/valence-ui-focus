@@ -7,7 +7,7 @@
 
 		beforeEach( function () {
 
-			jasmine.addMatchers( customMatchers );
+			jasmine.addMatchers( d2l.jasmine.matchers );
 
 			node = document.body.appendChild( document.createElement( 'div' ) );
 			node.className = 'vui-outline-force';
