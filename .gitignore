@@ -1,4 +1,5 @@
-node_modules/
 deplui.sublime-project
 deplui.sublime-workspace
-output
+dist/
+node_modules/
+output/
