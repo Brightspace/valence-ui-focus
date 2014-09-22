@@ -3,13 +3,12 @@
   "description": "Valence.UI focus behavior",
   "version": "0.0.0",
   "author": "D2L Incorporated",
-  "private": "true",
   "repository": {
     "type": "git",
     "url": "ssh://git@git.dev.d2l:7999/val/focus.git"
   },
   "devDependencies": {
-    "vui-helpers": "git+ssh://git@git.dev.d2l:7999/val/helpers.git",
-    "gulp": "^3.8.8"
+    "gulp": "^3.8.8",
+    "vui-helpers": "0.0.1"
   }
 }
