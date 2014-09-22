@@ -9,10 +9,10 @@ In most cases, you'll want to use this library on elements which do not already
 have a visible or obvious focus indicator. This typically includes links,
 checkboxes and radio inputs.
 
-LESS Mix-in
+LESS Mixin
 -----------
 
-In LESS, call `vui-focusOutline()` mix-in from your CSS selector, usually with
+In LESS, call `vui-focusOutline()` mixin from your CSS selector, usually with
 the `focus` pseudo-selector applied:
 
     a:focus {
@@ -23,14 +23,15 @@ You can also access the color used for the outline through the LESS variable
 `vui-focusColor`:
 
     div {
-      background-color: @vui-focusColor;
+      border: 1px solid @vui-focusColor;
     }
 
 CSS
 ---
 
-If you'd prefer to use plain CSS instead of LESS, simply apply the CSS class
+If you'd prefer to use plain CSS instead of LESS, bundle up the provided 
+`focus.css` file with your application's CSS. Then apply the CSS class
 `vui-outline` to any element in your HTML. When that element receives focus, 
-the outline style will be applied.
+the outline style will be applied automatically.
 
     <a class="vui-outline">my link</a>
