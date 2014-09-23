@@ -16,21 +16,31 @@ Install as a development dependency:
 npm install --save-dev vui-focus
 ```
 
+Import the library into your LESS file:
+
+```css
+@import 'node_modules/vui-focus/dist/focus'
+```
+
 ##LESS Mixin
 
 In LESS, call `vui-focusOutline()` mixin from your CSS selector, usually with
 the `focus` pseudo-selector applied:
 
-    a:focus {
-      .vui-focusOutline();
-    }
+```css
+a:focus {
+  .vui-focusOutline();
+}
+```
 
 You can also access the color used for the outline through the LESS variable 
 `vui-focusColor`:
 
-    div {
-      border: 1px solid @vui-focusColor;
-    }
+```css
+div {
+  border: 1px solid @vui-focusColor;
+}
+```
 
 #CSS
 
@@ -39,4 +49,6 @@ If you'd prefer to use plain CSS instead of LESS, bundle up the provided
 `vui-outline` to any element in your HTML. When that element receives focus, 
 the outline style will be applied automatically.
 
-    <a class="vui-outline">my link</a>
+```html
+<a class="vui-outline">my link</a>
+```
