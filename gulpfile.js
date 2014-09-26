@@ -18,6 +18,6 @@ gulp.task( 'test', function () {
 	return vui.test(
 			'test/unit/karma.conf.js',
 			'test/unit/**/*Spec.js',
-			'dist/**/*.css'
+			'css/**/*.css'
 		);
 } );
