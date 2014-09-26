@@ -2,12 +2,12 @@ var gulp = require( 'gulp' ),
 	vui = require( 'vui-helpers' );
 
 gulp.task( 'clean', function() {
-	return gulp.src( [ 'dist', 'output' ], { read: false } )
+	return gulp.src( [ 'css', 'output' ], { read: false } )
 		.pipe( vui.clean() );
 } );
 
 gulp.task( 'css', function () {
-	return vui.makeCss( 'src/**/*.style', 'dist/' );
+	return vui.makeCss( 'src/**/*.style', 'css/' );
 } );
 
 gulp.task( 'default', [ 'clean' ], function() {
