@@ -3,4 +3,5 @@
 .npmignore
 node_modules
 test
+focus.css.less
 gulpfile.js
