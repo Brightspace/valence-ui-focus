@@ -1,7 +1,14 @@
-@vui-focusColor: #94ccda;
+@vui-focusOutlineColor: #94ccda;
+@vui-focusOutlineOffset: 0;
+@vui-focusOutlineStyle: solid;
+@vui-focusOutlineWidth: 2px;
 
 .vui-focusOutline(
-		@color: @vui-focusColor
+		@outlineWidth: @vui-focusOutlineWidth,
+		@outlineColor: @vui-focusOutlineColor,
+		@outlineStyle: @vui-focusOutlineStyle,
+		@outlineOffset: @vui-focusOutlineOffset
 	) {
-	outline: 2px solid @color;
+	outline: @outlineWidth @outlineStyle @outlineColor;
+	outline-offset: @outlineOffset;
 }
