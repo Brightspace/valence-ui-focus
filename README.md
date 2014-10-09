@@ -33,12 +33,26 @@ a:focus {
 }
 ```
 
-You can also access the color used for the outline through the LESS variable 
-`vui-focusColor`:
+The outline width, color, style, and offset values can also be overriden when calling the LESS mixin:
+
+```css
+a:focus {
+  .vui-focusOutline(
+    @outlineWidth: 2px,
+    @outlineColor: #00FF00,
+    @outlineStyle: solid,
+    @outlineOffset: 2px
+  );
+}
+```
+
+You can also access the corresponding global LESS variables:
 
 ```css
 div {
-  border: 1px solid @vui-focusColor;
+  border-width: @vui-focusOutlineWidth;
+  border-style: @vui-focusOutlineStyle;
+  border-color: @vui-focusOutlineColor;
 }
 ```
 
