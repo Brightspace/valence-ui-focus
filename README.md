@@ -24,12 +24,12 @@ Import the library into your LESS file:
 
 ##LESS Mixin
 
-In LESS, call `vui-focusOutline()` mixin from your CSS selector, usually with
+In LESS, call `#vui.focusOutline()` mixin from your CSS selector, usually with
 the `focus` pseudo-selector applied:
 
 ```css
 a:focus {
-  .vui-focusOutline();
+  #vui.focusOutline();
 }
 ```
 
@@ -37,7 +37,7 @@ The outline width, color, style, and offset values can also be overriden when ca
 
 ```css
 a:focus {
-  .vui-focusOutline(
+  #vui.focusOutline(
     @outlineWidth: 2px,
     @outlineColor: #00FF00,
     @outlineStyle: solid,

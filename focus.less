@@ -3,12 +3,16 @@
 @vui-focusOutlineStyle: solid;
 @vui-focusOutlineWidth: 2px;
 
-.vui-focusOutline(
-		@outlineWidth: @vui-focusOutlineWidth,
-		@outlineColor: @vui-focusOutlineColor,
-		@outlineStyle: @vui-focusOutlineStyle,
-		@outlineOffset: @vui-focusOutlineOffset
-	) {
-	outline: @outlineWidth @outlineStyle @outlineColor;
-	outline-offset: @outlineOffset;
+#vui {
+
+	.focusOutline(
+			@outlineWidth: @vui-focusOutlineWidth,
+			@outlineColor: @vui-focusOutlineColor,
+			@outlineStyle: @vui-focusOutlineStyle,
+			@outlineOffset: @vui-focusOutlineOffset
+		) {
+		outline: @outlineWidth @outlineStyle @outlineColor;
+		outline-offset: @outlineOffset;
+	}
+
 }
