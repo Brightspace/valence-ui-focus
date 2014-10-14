@@ -58,11 +58,17 @@ div {
 
 #CSS
 
-If you'd prefer to use plain CSS instead of LESS, bundle up the provided 
+If you'd prefer to use plain CSS instead of LESS, bundle up the provided
 `focus.css` file with your application's CSS. Then apply the CSS class
-`vui-outline` to any element in your HTML. When that element receives focus, 
+`vui-outline` to any element in your HTML. When that element receives focus,
 the outline style will be applied automatically.
 
 ```html
 <a class="vui-outline">my link</a>
 ```
+
+## Contributing
+
+### Code Style
+
+This repository is configured with [EditorConfig](http://editorconfig.org) rules and contributions should make use of them. See the valence-ui [Code Style wiki page](https://github.com/Desire2Learn-Valence/valence-ui-helpers/wiki/Code-Style) for details.
