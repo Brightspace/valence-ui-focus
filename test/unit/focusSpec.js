@@ -28,10 +28,20 @@
 			expect( document ).toHaveCssSelector( '.vui-outline-force' );
 		} );
 
-		it( 'should have default outline when not focused', function() {
+		it( 'should have outline width 0px', function() {
 
 			var style = window.getComputedStyle( node, null );
-			expect( style.getPropertyValue( 'outline-color' ) ).toBe( 'rgb(148, 204, 218)' );
+			expect( style.getPropertyValue( 'outline-width' ) ).toBe( '0px' );
+
+		} );
+		
+		it( 'should have border-color', function() {
+
+			var style = window.getComputedStyle( node, null );
+			expect( style.getPropertyValue( 'border-top-color' ) ).toBe( 'rgb(148, 204, 218)' );
+			expect( style.getPropertyValue( 'border-right-color' ) ).toBe( 'rgb(148, 204, 218)' );
+			expect( style.getPropertyValue( 'border-bottom-color' ) ).toBe( 'rgb(148, 204, 218)' );
+			expect( style.getPropertyValue( 'border-left-color' ) ).toBe( 'rgb(148, 204, 218)' );
 
 		} );
 
