@@ -1,18 +1,20 @@
+@vui-focus-insetColor: #f2f2f2;
 @vui-focus-outlineColor: #94ccda;
-@vui-focus-outlineOffset: 0;
-@vui-focus-outlineStyle: solid;
-@vui-focus-outlineWidth: 2px;
+@vui-focus-insetBlur: 1px;
+@vui-focus-outlineBlur: 1px;
+@vui-focus-shadow: 1px;
 
 #vui {
 
 	.focusOutline(
-			@width: @vui-focus-outlineWidth,
+			@insetColor: @vui-focus-insetColor,
 			@color: @vui-focus-outlineColor,
-			@style: @vui-focus-outlineStyle,
-			@offset: @vui-focus-outlineOffset
+			@insetBlur: @vui-focus-insetBlur,
+			@blur: @vui-focus-outlineBlur,
+			@shadow: @vui-focus-shadow
 		) {
-		outline: @width @style @color;
-		outline-offset: @offset;
+		border-color: @color;
+		box-shadow: 0 0 @insetBlur 0 @insetColor inset, 0 0 @blur @shadow @color;
+		outline-width: 0;
 	}
-
 }
