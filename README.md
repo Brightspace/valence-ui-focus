@@ -13,6 +13,6 @@ See the [VUI Best Practices & Style Guide](https://github.com/Brightspace/valenc
 [npm-url]: https://www.npmjs.org/package/vui-focus
 [npm-image]: https://img.shields.io/npm/v/vui-focus.svg
 [ci-url]: https://travis-ci.org/Brightspace/valence-ui-focus
-[ci-image]: https://img.shields.io/travis-ci/Brightspace/valence-ui-focus.svg
+[ci-image]: https://travis-ci.org/Brightspace/valence-ui-focus.svg?branch=master
 [dependencies-url]: https://david-dm.org/brightspace/valence-ui-focus
 [dependencies-image]: https://img.shields.io/david/Brightspace/valence-ui-focus.svg
