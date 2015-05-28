@@ -1,5 +1,4 @@
-deplui.sublime-project
-deplui.sublime-workspace
 node_modules/
 test/output
 focus.css
+focus-less.css

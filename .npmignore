@@ -1,8 +1,11 @@
+.editorconfig
 .gitattributes
 .gitignore
 .npmignore
-.editorconfig
+.travis.yml
 node_modules
+karma.conf.js
 test
 focus.css.less
-gulpfile.js
+focus.css.scss
+focus-less.css

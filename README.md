@@ -3,7 +3,7 @@
 [![Build status][ci-image]][ci-url]
 [![Dependency Status][dependencies-image]][dependencies-url]
 
-The **vui-focus** library provides uncompiled Less and compiled CSS that can be used to apply an outline style to elements when they receive focus. This accessibility feature helps identify to the user which element currently has focus.
+This library contains uncompiled Sass mixins and compiled CSS that can be used to apply an outline style to elements when they receive focus. LESS mixins are still include for backward compatibility, however these will likely be removed in a future version. This accessibility feature helps identify to the user which element currently has focus.
 
 In most cases, you'll want to use this library on elements that do not already have a visible or obvious focus indicator, which is usually links, checkboxes and radio buttons.
 
