@@ -6,6 +6,4 @@
 node_modules
 karma.conf.js
 test
-focus.css.less
 focus.css.scss
-focus-less.css
