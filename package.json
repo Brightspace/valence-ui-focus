@@ -1,20 +1,13 @@
 {
   "name": "vui-focus",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "description": "Mixins and CSS for applying focus outline styles",
   "scripts": {
     "clean": "rimraf *.css",
     "prebuild": "npm run clean",
-    "build": "npm run build:sass:css && npm run build:less:css",
-    "build:less:css": "lessc focus.css.less > focus-less.css",
-    "postbuild:less:css": "csslint focus-less.css",
-    "build:sass:css": "node-sass --output-style expanded focus.css.scss focus.css",
-    "postbuild:sass:css": "csslint focus.css",
+    "build": "node-sass --output-style expanded focus.css.scss focus.css",
     "pretest": "npm run build",
-    "test": "npm run diff:assert && karma start karma.conf.js",
-    "prediff:assert": "npm run diff:create",
-    "diff:assert": "assertnodiff --file1 ./test/diff/less-scss-diff --file2 ./test/diff/less-scss-diff-new",
-    "diff:create": "createpatch --file1 focus-less.css --file2 focus.css -o ./test/diff/less-scss-diff-new"
+    "test": "csslint focus.css && karma start karma.conf.js"
   },
   "repository": {
     "type": "git",
@@ -34,13 +27,11 @@
   "dependencies": {},
   "devDependencies": {
     "csslint": "^0.10.0",
-    "diff-cli": "git://github.com/Brightspace/diff-cli.git#v0.0.1",
     "jasmine-dom-matchers": "^0.1.0",
     "karma": "^0.12.32",
     "karma-phantomjs-launcher": "^0.1.4",
     "karma-jasmine": "^0.3.5",
     "karma-cli": "0.0.4",
-    "less": "^2.5.1",
     "node-sass": "^3.1.1",
     "rimraf": "^2.3.4"
   }
